@@ -1,0 +1,23 @@
+nav {
+  height: 60px;
+  background-color: #d2691e;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  align-items: center;
+}
+
+#socials {
+  justify-self: end;
+  font-size: 1.3rem;
+}
+
+.limiter {
+  width: 8px;
+  display: inline-block;
+}
+
+#navs > a {
+  font-size: 0.9rem;
+  padding-right: 7px;
+}

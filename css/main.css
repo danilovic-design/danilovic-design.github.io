@@ -1,0 +1,44 @@
+#welcome {
+  color: white;
+  padding-top: 30vh;
+}
+
+#hiremediv {
+  margin-top: 10px;
+}
+
+#hireme {
+  padding: 10px 15px;
+  border-radius: 15px;
+  background-color: #d2691e;
+  margin: 10px;
+  font-size: 1.1em;
+}
+
+#roles {
+  text-transform: uppercase;
+}
+
+#greeting {
+  font-size: 0, 95rem;
+}
+
+#name {
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+#devotion {
+  color: #888;
+}
+
+#roles a {
+  color: #d2691e;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+#roles span {
+  padding: 0 3px;
+}
