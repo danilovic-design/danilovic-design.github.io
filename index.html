@@ -14,12 +14,22 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
     <title>Laszlo Dani - Webdeveloper</title>
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/webstack.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/infosec.css" />
   </head>
   <body>
     <nav class="p2">
@@ -30,16 +40,16 @@
         <a href="#contact">Contact</a>
       </div>
       <div id="socials">
-        <a href="#webstack"><i class="fa-brands fa-linkedin"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/laszlodanilovic/"><i class="fa-brands fa-linkedin"></i></a>
         <span class="limiter"></span>
-        <a href="#infosec"><i class="fa-brands fa-github"></i> </a>
+        <a target="_blank" href="https://github.com/danilovic-design"><i class="fa-brands fa-github"></i> </a>
       </div>
     </nav>
     <main class="p2">
       <div id="darkener">
         <article id="welcome">
           <div id="greeting">Hello. I'm</div>
-          <div id="name" class="h1 py2">Laszlo</div>
+          <div id="name" class="h1 pt1 pb2">Laszlo</div>
           <div id="roles">
             <a href="#webstack">Web developer</a>
             <span> | </span>
@@ -55,73 +65,113 @@
         </article>
       </div>
     </main>
-    <section id="webstack" class="pt2 p2">
+    <section id="webstack" class="pt2 p2 techstack">
       <div>
         <h1>My web stack <i class="fa-solid fa-code"></i></h1>
       </div>
       <hr />
-      <div>
-        <h5>Frontend technologies</h5>
-        <ul id="frontendframeworks">
-          <li>React</li>
-          <li>Material-UI (React)</li>
-          <li>VueJS</li>
-          <li>Gatsby</li>
-        </ul>
-      </div>
-      <div>
-        <h5>Backend technologies</h5>
-        <ul id="backendskills">
-          <li>NodeJS</li>
-          <li>Express JS</li>
-          <li>Firebase</li>
-          <li>Next JS</li>
-          <li>Nuxt JS</li>
-        </ul>
-      </div>
-
-      <div>
-        <h5>Database skills</h5>
-        <ul id="databaseskills">
-          <li>Firestore</li>
-          <li>MongodDB</li>
-          <li>SQL</li>
-        </ul>
-      </div>
-      <div>
-        <h5>Last but not least</h5>
-        <ul id="otherweb">
-          <li>Docker</li>
-          <li>Vagrant</li>
-          <li>Git</li>
-          <li>Linux administration</li>
-          <li>Bash scripting</li>
-          <li>Batch scripting</li>
-          <li>jQuery</li>
-          <li>Boostrap</li>
-        </ul>
+      <div class="techs">
+        <div>
+          <h5>Frontend technologies</h5>
+          <ul id="frontendframeworks">
+            <li><a target="_blank" href="https://reactjs.org">React<img src="img/react.png" /></a></li>
+            <li><a target="_blank" href="https://mui.com">Material-UI (React)<img src="img/mui.png" /></a></li>
+            <li><a target="_blank" href="https://vuejs.org">VueJS<img src="img/vue.png" /></a></li>
+            <li><a target="_blank" href="https://www.gatsbyjs.com">Gatsby<img src="img/gatsby.png" /></a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Backend technologies</h5>
+          <ul id="backendskills">
+            <li><a target="_blank" href="https://nodejs.org">NodeJS<img src="img/node.png" /></a></li>
+            <li><a target="_blank" href="https://expressjs.com/">Express JS<img src="img/express.png" /></a></li>
+            <li><a target="_blank" href="https://firebase.google.com/">Firebase<img src="img/firebase.png" /></a></li>
+            <li><a target="_blank" href="https://nextjs.org/">Next JS<img src="img/next.png" /></a></li>
+            <li><a target="_blank" href="https://nuxtjs.org/">Nuxt JS<img src="img/nuxt.jpg" /></a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Database skills</h5>
+          <ul id="databaseskills">
+            <li>Firestore<img src="img/firebase.png" /></li>
+            <li>MongodDB<img src="img/mongo.png" /></li>
+            <li>SQL<img src="img/sql.png" /></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Last but not least</h5>
+          <ul id="otherweb">
+            <li><a target="_blank" href="https://www.docker.com"></a>Docker<img src="img/docker.png" /></li>
+            <li><a target="_blank" href="https://www.vagrantup.com"></a>Vagrant<img src="img/vagrant.png" /></li>
+            <li><a target="_blank" href="https://github.com"></a>Git<img src="img/git.png" /></li>
+            <li><a target="_blank" href="https://kali.org"></a>Linux administration<img src="img/linux.png" /></li>
+            <li><a target="_blank" href="https://jquery.com"></a>jQuery<img src="img/jquery.png" /></li>
+            <li><a target="_blank" href="https://getbootstrap.com"></a>Boostrap<img src="img/bootstrap.jpg" /></li>
+          </ul>
+        </div>
       </div>
     </section>
-    <section id="infosec">
+    <section id="infosec" class="pt2 p2 techstack">
       <div>
-        <h1>
-          Penetration testing <i class="fa-solid fa-shield-quartered"></i>
-        </h1>
+        <h1>Penetration testing <i class="fa-solid fa-shield-halved"></i></h1>
       </div>
-      <div>
-        <h5>Testing tools with experience</h5>
+      <hr />
+      <div class="techs">
+        <div>
+          <h5>Scripting</h5>
+          <ul>
+            <li>Javascript</li>
+            <li>Python</li>
+            <li>PHP</li>
+            <li>Batch-scripting</li>
+            <li>Bash-scripting</li>
+            <li>Powershell</li>
+          </ul>
+        </div>
+
+        <div>
+          <h5>Tools</h5>
+          <ul>
+          <li>Testing web-applications</li>
+          <li>wireshark</li>
+          <li>msfconsole</li>
+          <li>ZAP</li>
+        </ul>
+        </div>
+        <div>
+        <h5>Testing skills</h5>
         <ul>
-          <li></li>
+          <li>nmap</li>
+          <li>wireshark</li>
+          <li>msfconsole</li>
+          <li>ZAP</li>
+        </ul>
+      </div>
+      
+      <div>
+        <h5>Operating systems</h5>
+        <ul>
+          <li>Kali-linux</li>
+          <li>Ubuntu</li>
+          <li>Windows</li>
         </ul>
       </div>
     </section>
     <section id="references">
       <article>WordLearner</article>
-      <article>Tryhacke</article>
       <article>Certificates</article>
     </section>
     <section id="contact">
-      <ul></ul>
+      <ul>
+        <li>Hungarian</li>
+        <li>English</li>
+        <li>German</li>
+        <li>French</li>
+        <li>Serbian</li>
+        <li>Polish</li>
+        <li>Russian</li>
+        <li>Swedish</li>
+      </ul>
     </section>
     <section id="aboutme"></section>
   </body>

@@ -18,6 +18,9 @@ nav {
 }
 
 #navs > a {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   padding-right: 7px;
+  text-transform: uppercase;
+  /*font-family: "VT323", monospace;*/
+  font-family: "Bebas Neue", cursive;
 }

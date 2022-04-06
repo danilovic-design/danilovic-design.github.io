@@ -1,0 +1,16 @@
+#infosec {
+  background-color: #0b130b;
+  color: greenyellow;
+  font-family: "VT323", monospace;
+  min-height: 100vh;
+}
+
+#infosec hr {
+  border-top: 2px dashed greenyellow;
+  border-bottom: none;
+}
+
+#infosec h5 {
+  font-size: 1.2rem;
+  color: rgb(155, 173, 129);
+}

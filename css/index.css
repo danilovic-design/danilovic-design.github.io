@@ -32,6 +32,13 @@ a {
 .pt2 {
   padding-top: 25px;
 }
+.pb1 {
+  padding-bottom: 15px;
+}
+
+.pb2 {
+  padding-bottom: 25px;
+}
 
 .py2 {
   padding-top: 20px;
@@ -40,4 +47,51 @@ a {
 
 .h1 {
   font-size: large;
+}
+
+/**/
+
+.techstack h1 {
+  text-align: center;
+}
+
+.techstack ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.techs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.techs > div {
+  padding-left: 15vw;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.techs h5 {
+  color: rgb(87, 85, 85);
+  margin: 0;
+}
+
+.techs ul {
+  margin: 0;
+}
+
+.techs ul li {
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-top: 3px;
+  padding-bottom: 2px;
+}
+
+.techs ul li img {
+  padding-left: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  top: 3px;
 }
