@@ -24,3 +24,11 @@ nav {
   /*font-family: "VT323", monospace;*/
   font-family: "Bebas Neue", cursive;
 }
+
+#navs > a:hover {
+  font-size: 1.3rem;
+}
+
+#socials a:hover {
+  font-size: 1.4rem;
+}

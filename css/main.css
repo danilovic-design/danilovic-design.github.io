@@ -15,6 +15,10 @@
   font-size: 1.1em;
 }
 
+#hireme:hover {
+  background-color: #914814;
+}
+
 #roles {
   text-transform: uppercase;
 }
@@ -37,6 +41,10 @@
   color: #d2691e;
   font-weight: 700;
   font-size: 1.1rem;
+}
+
+#roles a:hover {
+  color: #914814;
 }
 
 #roles span {
