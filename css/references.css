@@ -30,6 +30,7 @@
 .website-name {
   text-align: center;
   font-size: 0.7rem;
+  padding-top: 2px;
 }
 
 .website-name i {
@@ -39,15 +40,18 @@
   background-color: #ff5f57;
   border-radius: 50%;
   position: absolute;
-  top: 1px;
+  top: 2px;
   left: 10px;
 }
 
-.website-name i::after {
-  content: " ";
-  left: 16px;
+.website-name i:nth-child(2) {
   background-color: #ffbd2e;
-  top: 0;
+  left: 25px;
+}
+
+.website-name i:nth-child(3) {
+  background-color: #28ca41;
+  left: 40px;
 }
 
 .website-description {

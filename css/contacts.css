@@ -56,4 +56,9 @@
   font-style: italic;
   font-weight: 700;
   color: #29272a;
+  padding: 0px 5px;
+}
+
+#contacts article ul li img {
+  height: 15px;
 }
