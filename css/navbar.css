@@ -22,7 +22,11 @@ nav {
   padding-right: 7px;
   text-transform: uppercase;
   /*font-family: "VT323", monospace;*/
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue", "Roboto", cursive;
+}
+
+#navs > div {
+  display: none;
 }
 
 #navs > a:hover {
@@ -31,4 +35,51 @@ nav {
 
 #socials a:hover {
   font-size: 1.4rem;
+}
+
+.hamburger {
+  font-size: 1.4rem;
+  cursor: pointer;
+  max-width: 50px;
+}
+
+/*.hamburger i {
+  height: 3px;
+  display: block;
+  background-color: white;
+  margin: 5px 0;
+  width: 100%;
+}*/
+
+@media (max-width: 900px) {
+  #navs a {
+    display: none;
+  }
+
+  #navs div {
+    display: block;
+  }
+}
+
+.menu {
+  position: fixed;
+  transform: translateX(-110%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 150px;
+  bottom: 150px;
+  z-index: 99;
+  background: white;
+  color: black;
+  list-style: none;
+  padding-top: 4rem;
+}
+
+.showMenu {
+  transform: translateX(0);
+}
+
+.menu-item {
+  display: block;
 }

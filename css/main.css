@@ -12,7 +12,8 @@
   border-radius: 15px;
   background-color: #d2691e;
   margin: 10px;
-  font-size: 1.1em;
+  font-size: 1.3em;
+  text-transform: uppercase;
 }
 
 #hireme:hover {
