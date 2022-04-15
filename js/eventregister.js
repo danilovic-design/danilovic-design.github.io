@@ -3,30 +3,26 @@ const menu = document.querySelector(".menu");
 const menuItems = document.querySelectorAll(".menuItem");
 const menuIcon = document.querySelector(".menuIcon");
 
-function toggleMenu(go) {
-  console.log("Toggling...");
-  if (!go) {
-    menu.classList.remove("showMenu");
-    menuIcon.style.display = "block";
-  } else {
+function toggleMenu(setMenuOn) {
+  if (setMenuOn) {
     menu.classList.add("showMenu");
     menuIcon.style.display = "none";
+  } else {
+    menu.classList.remove("showMenu");
+    menuIcon.style.display = "block";
   }
 }
 
-hamburger.addEventListener("click", function (clickEvent) {
-  console.log(clickEvent.target);
-  toggleMenu(true);
-});
-
 document.addEventListener("click", function (clickEvent) {
-  if (clickEvent.target !== hamburger || clickEvent.target !== menuIcon) {
-    console.log("Not hamburger");
+  if (
+    clickEvent.target !== hamburger &&
+    clickEvent.target !== menuIcon &&
+    clickEvent.target !== menu
+  ) {
     toggleMenu(false);
   }
 });
 
 menuIcon.addEventListener("click", function (clickEvent) {
-  console.log("Menu icon");
   toggleMenu(true);
 });
