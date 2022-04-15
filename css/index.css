@@ -67,6 +67,13 @@ a {
 .techs {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .techs {
+    grid-template-columns: 1fr;
+  }
 }
 
 .techs > div {

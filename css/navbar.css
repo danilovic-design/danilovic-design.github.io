@@ -78,9 +78,16 @@ nav {
   bottom: 150px;
   z-index: 99;
   background: white;
+  border-radius: 8px;
   color: black;
   list-style: none;
   padding-top: 4rem;
+}
+
+@media (min-width: 900px) {
+  .menu {
+    display: none;
+  }
 }
 
 .showMenu {
@@ -89,4 +96,6 @@ nav {
 
 .menu-item {
   display: block;
+  padding: 5px 0;
+  font-weight: 500;
 }

@@ -3,8 +3,9 @@ const menu = document.querySelector(".menu");
 const menuItems = document.querySelectorAll(".menuItem");
 const menuIcon = document.querySelector(".menuIcon");
 
-function toggleMenu() {
-  if (menu.classList.contains("showMenu")) {
+function toggleMenu(go) {
+  console.log("Toggling...");
+  if (!go) {
     menu.classList.remove("showMenu");
     menuIcon.style.display = "block";
   } else {
@@ -15,17 +16,17 @@ function toggleMenu() {
 
 hamburger.addEventListener("click", function (clickEvent) {
   console.log(clickEvent.target);
-  toggleMenu();
+  toggleMenu(true);
 });
 
 document.addEventListener("click", function (clickEvent) {
   if (clickEvent.target !== hamburger || clickEvent.target !== menuIcon) {
     console.log("Not hamburger");
-    toggleMenu();
+    toggleMenu(false);
   }
 });
 
 menuIcon.addEventListener("click", function (clickEvent) {
   console.log("Menu icon");
-  toggleMenu();
+  toggleMenu(true);
 });

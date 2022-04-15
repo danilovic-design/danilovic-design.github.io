@@ -39,27 +39,29 @@
   box-sizing: border-box;
 }
 
-#contacts article {
-  position: absolute;
-  bottom: 10vh;
-  color: black;
-  font-style: italic;
-}
-
-#contacts ul {
+#languages ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-#contacts ul li {
+#languages ul li {
   font-style: italic;
   font-weight: 700;
   color: #29272a;
   padding: 0px 5px;
 }
 
-#contacts article ul li img {
+#languages ul li img {
   height: 15px;
   padding-left: 3px;
+}
+
+#languages {
+  position: absolute;
+  bottom: 10vh;
+  color: black;
+  font-style: italic;
 }
