@@ -1,5 +1,6 @@
 .uparrow-hidden {
-  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden;
 }
 
 #uparrow {
@@ -15,4 +16,12 @@
   justify-content: center;
   cursor: pointer;
   display: flex;
+  visibility: visible;
+  transition-property: opacity;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in;
+}
+
+#uparrow:active {
+  opacity: 0.6;
 }
