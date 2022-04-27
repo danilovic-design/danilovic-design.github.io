@@ -82,6 +82,7 @@ nav {
   color: black;
   list-style: none;
   padding-top: 4rem;
+  visibility: hidden;
 }
 
 @media (min-width: 900px) {
@@ -92,6 +93,7 @@ nav {
 
 .showMenu {
   transform: translateX(0);
+  visibility: visible;
 }
 
 .menu-item {
