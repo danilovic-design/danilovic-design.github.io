@@ -11,6 +11,23 @@ main {
   background-image: url("../img/prog_big.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 0% 0%;
+  animation-name: movingbackground;
+  animation-duration: 180s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes movingbackground {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 a {
