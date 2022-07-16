@@ -14,16 +14,32 @@
   margin: 10px;
   font-size: 1.3em;
   text-transform: uppercase;
-  transition: background-color 0.4s;
+  /*transition: background-color 0.4s;*/
   font-weight: 500;
+  animation-name: pulsation;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
 }
-
+/*
 #hireme:hover {
   background-color: #ad500d;
-}
+}*/
 
 #roles {
   text-transform: uppercase;
+}
+
+@keyframes pulsation {
+  0% {
+    background-color: #d2691e;
+  }
+  50% {
+    background-color: #ad500d;
+  }
+
+  100% {
+    background-color: #d2691e;
+  }
 }
 
 #greeting {
